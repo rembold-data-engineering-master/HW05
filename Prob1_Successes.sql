@@ -1,3 +1,9 @@
+/*
+All the commands in this file should execute successfully, and without error.
+If any of them return an error, you need to revisit your table creation.
+*/
+
+
 INSERT INTO hw5.movies (id,title,year,director) VALUES
   (1,'Dil Chahta Hai',2001,'Farhan Akhtar'),
   (2,'The Bourne Ultimatum',2007,'Paul Greengrass'),

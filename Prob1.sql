@@ -1,8 +1,11 @@
-CREATE SCHEMA IF NOT EXISTS hw5;
+/*
+Collaborators (if any):
+Time spent (in hours):
+*/
 
-DROP TABLE IF EXISTS hw5.ratings;
-DROP TABLE IF EXISTS hw5.movies;
-DROP TABLE IF EXISTS hw5.reviewers;
+
+DROP SCHEMA IF EXISTS hw5 CASCADE;
+CREATE SCHEMA hw5;
 
 CREATE TABLE hw5.movies (
 
