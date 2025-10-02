@@ -8,9 +8,9 @@ For each section below, describe exactly which constraint is violated and how it
 
 ## A)
 ```sql
-INSERT INTO hw5.ratings (reviewer_id,movie_id,stars,rating_date) 
+INSERT INTO hw5.ratings (reviewer_id, movie_id, stars, rating_date) 
 VALUES
-  (1,3,6,'1999-04-18');
+  (1, 2, 0, '2012-02-18');
 ```
 Description:
 
@@ -18,9 +18,9 @@ Description:
 
 ## B)
 ```sql
-INSERT INTO hw5.ratings (reviewer_id,movie_id,stars,rating_date) 
+INSERT INTO hw5.ratings (reviewer_id, movie_id, stars, rating_date) 
 VALUES
-  (1,2,0,'2012-02-18');
+  (4, 3, 4.3, '1999-12-31');
 ```
 Description:
 
@@ -28,7 +28,9 @@ Description:
 
 ## C)
 ```sql
-DROP TABLE hw5.movies;
+INSERT INTO hw5.reviewers (id) 
+VALUES
+  (20);
 ```
 Description:
 
@@ -36,9 +38,9 @@ Description:
 
 ## D)
 ```sql
-INSERT INTO hw5.ratings (reviewer_id,movie_id,stars,rating_date) 
+INSERT INTO hw5.ratings (reviewer_id, movie_id, stars) 
 VALUES
-  (4,3,-2,'2014-01-03');
+  (1, 3, 3);
 ```
 Description:
 
@@ -46,40 +48,10 @@ Description:
 
 ## E)
 ```sql
-INSERT INTO hw5.reviewers (id,name) 
+INSERT INTO hw5.movies (id, title, year, director) 
 VALUES
-  (20,NULL);
-```
-Description:
-
-
-
-## F)
-```sql
-INSERT INTO hw5.ratings (reviewer_id,movie_id,stars,rating_date) 
-VALUES
-  (2,3,4.3,'1989-10-30');
-```
-Description:
-
-
-
-## G)
-```sql
-INSERT INTO hw5.ratings (reviewer_id,movie_id,stars,rating_date) 
-VALUES
-  (1,3,3,NULL);
-```
-Description:
-
-
-
-## H)
-```sql
-INSERT INTO hw5.movies (id,title,year,director) 
-VALUES
-  (51,'The Graduate',1867,'Mike Nichols'),
-  (52,'The Graduate',1867,'Krzysztof Kieslowski');
+  (51, 'The Graduate', 1867, 'Mike Nichols'),
+  (52, 'The Graduate', 1867, 'Krzysztof Kieslowski');
 ```
 Description:
 
